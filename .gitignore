@@ -49,3 +49,5 @@
 .idea/**/gradle.xml
 .idea/**/libraries
 
+
+\.idea/
