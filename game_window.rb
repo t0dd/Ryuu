@@ -17,7 +17,11 @@ class GameWindow < Gosu::Window
   end
 
   def update
-    # ...
+    unless @game_over
+      10.times do
+        @space.step(1.0/600)
+      end
+    end
   end
 
   def draw
