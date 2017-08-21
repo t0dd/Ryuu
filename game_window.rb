@@ -3,6 +3,7 @@ require 'chipmunk'
 
 class GameWindow < Gosu::Window
   GRAVITY = 400.0
+  GRAVITY_DIRECTION = 0.0
   DAMPING = 0.9
   attr_reader :space
   def initialize
@@ -11,7 +12,7 @@ class GameWindow < Gosu::Window
     @space = CP::Space.new
     @background = Gosu::Image.new('assets/img/bg.png')
     @space.damping = DAMPING
-    @space.gravity = CP::Vec2.new(0.0, GRAVITY)
+    @space.gravity = CP::Vec2.new(GRAVITY_DIRECTION, GRAVITY)
     @game_over = false
   end
 
