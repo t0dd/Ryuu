@@ -12,6 +12,7 @@ class GameWindow < Gosu::Window
     @background = Gosu::Image.new('assets/img/bg.png')
     @space.damping = DAMPING
     @space.gravity = CP::Vec2.new(0.0, GRAVITY)
+    @game_over = false
   end
 
   def update

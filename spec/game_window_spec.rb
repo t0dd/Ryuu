@@ -20,6 +20,9 @@ describe 'GameWindow.new' do
   it 'should have a constant DAMPING value set' do
     expect(damping).to eql 0.9
   end
+  it 'should have a game over trigger' do
+    expect(game_window.instance_variable_get(:@game_over)).to eql false
+  end
 end
 
 
