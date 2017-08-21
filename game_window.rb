@@ -10,6 +10,8 @@ class GameWindow < Gosu::Window
     self.caption = "Ryuu"
     @space = CP::Space.new
     @background = Gosu::Image.new('assets/img/bg.png')
+    @space.damping = DAMPING
+    @space.gravity = CP::Vec2.new(0.0, GRAVITY)
   end
 
   def update

@@ -14,10 +14,10 @@ describe 'GameWindow.new' do
   it 'should have a GamWindow caption' do
     expect(game_window.caption).to eql 'Ryuu'
   end
-  it 'should have a GRAVITY value set' do
+  it 'should have a constant GRAVITY value set' do
     expect(gravity).to eql 400.0
   end
-  it 'should have a DAMPING value set' do
+  it 'should have a constant DAMPING value set' do
     expect(damping).to eql 0.9
   end
 end
